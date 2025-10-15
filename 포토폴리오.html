@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유인호 | IT 기획자 / 프로젝트 매니저 포트폴리오</title>
+
+    <!-- SEO 및 소셜 미디어 최적화 -->
+    <meta name="description"
+        content="프로젝트의 본질을 정의하고, 실행으로 연결하는 IT 기획자 유인호입니다. 정부사업 프로젝트 기획·운영 경험을 바탕으로 한 전문적인 포트폴리오입니다.">
+    <meta name="keywords" content="IT기획자, 프로젝트매니저, PM, 정부사업, 메타버스, 스마트팩토리, 디지털트윈">
+    <meta name="author" content="유인호">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="유인호 | IT 기획자 / 프로젝트 매니저 포트폴리오">
+    <meta property="og:description" content="프로젝트의 본질을 정의하고, 실행으로 연결하는 IT 기획자 유인호입니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuinho-portfolio.com">
+    <meta property="og:image" content="https://yuinho-portfolio.com/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="유인호 | IT 기획자 / 프로젝트 매니저 포트폴리오">
+    <meta name="twitter:description" content="프로젝트의 본질을 정의하고, 실행으로 연결하는 IT 기획자 유인호입니다.">
+    <meta name="twitter:image" content="https://yuinho-portfolio.com/og-image.jpg">
+
+    <!-- JSON-LD 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "유인호",
+        "jobTitle": "IT 기획자 / 프로젝트 매니저",
+        "description": "프로젝트의 본질을 정의하고, 실행으로 연결하는 IT 기획자",
+        "url": "https://yuinho-portfolio.com",
+        "email": "yuinho1997@gmail.com",
+        "sameAs": [
+            "https://linkedin.com/in/yuinho",
+            "https://github.com/yuinho"
+        ],
+        "knowsAbout": ["프로젝트 기획", "정부사업", "메타버스", "스마트팩토리", "디지털트윈", "MRO"],
+        "alumniOf": "건축학과",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "인포인"
+        }
+    }
+    </script>
+
+    <!-- 성능 최적화: 시스템 폰트 우선, 외부 폰트 지연 로딩 -->
+    <style>
+        /* 시스템 폰트 스택으로 즉시 렌더링 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #111827;
+            background-color: #ffffff;
+        }
+
+        /* 다크모드 지원 */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-blue: #3b82f6;
+                --dark-navy: #0f172a;
+                --bg-color: #0f172a;
+                --text-color: #f8fafc;
+                --card-bg: #1e293b;
+                --border-color: #334155;
+                --accent-color: #60a5fa;
+            }
+        }
+
+        :root {
+            --primary-blue: #2563eb;
+            --dark-navy: #111827;
+            --bg-color: #ffffff;
+            --text-color: #111827;
+            --card-bg: #f8fafc;
+            --border-color: #e2e8f0;
+            --accent-color: #3b82f6;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* 접근성: 스킵 링크 */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* 기본 레이아웃 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 헤더 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            header {
+                background: rgba(15, 23, 42, 0.95);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus {
+            color: var(--primary-blue);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a:focus::after {
+            width: 100%;
+        }
+
+        /* 모바일 메뉴 */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-color);
+        }
+
+        /* 섹션 공통 스타일 */
+        section {
+            padding: 5rem 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Hero 섹션 */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-navy) 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .hero .tagline {
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-link:hover,
+        .hero-link:focus {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* About 섹션 */
+        .about {
+            background: var(--card-bg);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-blue);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .highlight-card {
+                background: var(--card-bg);
+            }
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .highlight-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-card p {
+            font-size: 0.9rem;
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        /* Projects 섹션 */
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--primary-blue);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .project-card {
+                background: var(--card-bg);
+            }
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-color));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .project-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .project-header .project-period {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-role {
+            background: #f0f9ff;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .project-role {
+                background: #1e3a8a;
+            }
+        }
+
+        .project-role h4 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .project-role p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .project-details {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-details h4 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .project-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-details li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .project-details li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-size: 0.8rem;
+        }
+
+        .project-details li:last-child {
+            border-bottom: none;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Skills 섹션 */
+        .skills {
+            background: var(--card-bg);
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .skill-category {
+                background: var(--card-bg);
+            }
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .skill-item {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .skill-item {
+                background: #374151;
+                color: #d1d5db;
+            }
+        }
+
+        .skill-item:hover {
+            background: var(--primary-blue);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Contact 섹션 */
+        .contact {
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--primary-blue);
+            color: white;
+            padding: 1.25rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-link:hover,
+        .contact-link:focus {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-navy);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 접근성: 포커스 스타일 */
+        *:focus {
+            outline: 2px solid var(--primary-blue);
+            outline-offset: 2px;
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* 지연 로딩 이미지 */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+
+        /* 스크롤 인디케이터 */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(37, 99, 235, 0.2);
+            z-index: 1000;
+        }
+
+        .scroll-progress {
+            height: 100%;
+            background: var(--primary-blue);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+    </style>
+
+    <!-- 외부 폰트 지연 로딩 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* 폰트 로드 후 적용 */
+        .fonts-loaded body {
+            font-family: 'Noto Sans KR', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 접근성: 스킵 링크 -->
+    <a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+
+    <!-- 스크롤 진행 표시 -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </div>
+
+    <!-- 헤더 -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">유인호</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="메뉴 열기">☰</button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero 섹션 -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>유인호</h1>
+                    <p class="subtitle">IT 기획자 / 프로젝트 매니저</p>
+                    <p class="tagline">프로젝트의 본질을 정의하고, 실행으로 연결하는 IT 기획자 유인호입니다.</p>
+                    <div class="hero-links">
+                        <a href="mailto:yuinho1997@gmail.com" class="hero-link">
+                            📧 이메일
+                        </a>
+                        <a href="/resume.pdf" class="hero-link" target="_blank" rel="noopener noreferrer">
+                            📄 이력서
+                        </a>
+                        <a href="https://linkedin.com/in/yuinho" class="hero-link" target="_blank"
+                            rel="noopener noreferrer">
+                            💼 LinkedIn
+                        </a>
+                        <a href="https://github.com/yuinho" class="hero-link" target="_blank" rel="noopener noreferrer">
+                            🐙 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About 섹션 -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <div
+                            style="width: 250px; height: 250px; background: linear-gradient(135deg, var(--primary-blue), var(--accent-color)); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; box-shadow: var(--shadow-lg);">
+                            프로필 이미지
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>저는 적극적인 태도와 원활한 커뮤니케이션 능력을 바탕으로 프로젝트를 추진해왔습니다. 선임 기획자의 부재 상황에서도 주도적으로 개발자 및 디자이너와 협력하며 프로젝트를
+                            안정적으로 운영했습니다.</p>
+                        <p>건축 설계 시절의 3D 모델링 경험과 IT 기획자로서의 실무 경험을 통해 기술적 이해와 시각적 커뮤니케이션 모두에 강점을 가지고 있습니다.</p>
+                        <p><strong>"기획은 커뮤니케이션이다"</strong>라는 철학을 바탕으로, 복잡한 요구사항을 명확하게 정의하고 팀원들과의 원활한 소통을 통해 프로젝트를 성공적으로
+                            완수해왔습니다.</p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-card">
+                                <h3>1년 3개월 경력</h3>
+                                <p>IT 기획자로서의 실무 경험</p>
+                            </div>
+                            <div class="highlight-card">
+                                <h3>정부사업</h3>
+                                <p>다양한 국가 사업 프로젝트 참여</p>
+                            </div>
+                            <div class="highlight-card">
+                                <h3>협업 중심</h3>
+                                <p>팀 시너지 창출을 통한 성과 달성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects 섹션 -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2>대표 프로젝트</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>항공산단 메타버스 비즈니스 플랫폼</h3>
+                            <p class="project-period">2024.04 ~ 2025.06 (3차년도 사업)</p>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-role">
+                                <h4>주요 역할</h4>
+                                <p>기획·운영보조 및 산출물 관리, AR/VR 콘텐츠 기획</p>
+                            </div>
+                            <div class="project-details">
+                                <h4>주요 수행 업무</h4>
+                                <ul>
+                                    <li>3차년도 사업 프로젝트 운영보조 및 관리</li>
+                                    <li>2차년도 사업 발표자료 제작 및 행사 참여</li>
+                                    <li>WBS(Work Breakdown Structure) 작성 및 일정 관리</li>
+                                    <li>VR 기획 및 AR 콘텐츠 구상</li>
+                                    <li>프로젝트 보고서 및 산출물 작성·관리 총괄</li>
+                                    <li>화면설계서 수정 및 보완</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">프로젝트 관리</span>
+                                <span class="tech-tag">WBS</span>
+                                <span class="tech-tag">VR/AR</span>
+                                <span class="tech-tag">메타버스</span>
+                                <span class="tech-tag">산출물 관리</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>스마트 항공 정비창 MRO 사업</h3>
+                            <p class="project-period">2024.09 ~ 2025.02</p>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-role">
+                                <h4>주요 역할</h4>
+                                <p>기획 및 홍보영상 제작, 디지털 트윈 아이디어 제안</p>
+                            </div>
+                            <div class="project-details">
+                                <h4>주요 수행 업무</h4>
+                                <ul>
+                                    <li>디지털 트윈 시스템 기획 보조</li>
+                                    <li>기능 정의서 및 기술 리서치 보조 작성</li>
+                                    <li>산출물 관리 및 제출물 검토 참여</li>
+                                    <li>홍보영상 기획 및 제작</li>
+                                    <li>육군헬기 정비 프로세스 분석</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">디지털 트윈</span>
+                                <span class="tech-tag">MRO</span>
+                                <span class="tech-tag">영상 제작</span>
+                                <span class="tech-tag">기능 정의서</span>
+                                <span class="tech-tag">기술 리서치</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>대중소 스마트팩토리 사업</h3>
+                            <p class="project-period">2024.09 ~ 2025.03 (포스코 연계)</p>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-role">
+                                <h4>주요 역할</h4>
+                                <p>초기 기획, 제안서 작성, 사업 계획 수립 지원</p>
+                            </div>
+                            <div class="project-details">
+                                <h4>주요 수행 업무</h4>
+                                <ul>
+                                    <li>초기 기획 및 사업계획서 작성 지원</li>
+                                    <li>참여기업 요구사항 분석 및 데이터 수집 지원</li>
+                                    <li>스마트팩토리 솔루션 기획</li>
+                                    <li>중소기업 디지털 전환 전략 수립</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">스마트팩토리</span>
+                                <span class="tech-tag">사업계획서</span>
+                                <span class="tech-tag">요구사항 분석</span>
+                                <span class="tech-tag">디지털 전환</span>
+                                <span class="tech-tag">협력 체계</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills 섹션 -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2>Skills & Tools</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>기획 도구</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Notion</span>
+                            <span class="skill-item">Figma</span>
+                            <span class="skill-item">WBS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>시각 자료</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">PowerPoint</span>
+                            <span class="skill-item">3D 모델링</span>
+                            <span class="skill-item">영상 편집</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>기술 이해도</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">HTML</span>
+                            <span class="skill-item">CSS</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">AI 웹 편집</span>
+                            <span class="skill-item">데이터 분석</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>협업 역량</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">커뮤니케이션</span>
+                            <span class="skill-item">프로젝트 리딩</span>
+                            <span class="skill-item">팀 협업</span>
+                            <span class="skill-item">문제 해결</span>
+                            <span class="skill-item">문서화</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact 섹션 -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>프로젝트 기획과 실행을 함께할 파트너를 찾습니다.</p>
+                <div class="contact-links">
+                    <a href="mailto:yuinho1997@gmail.com" class="contact-link">
+                        📧 yuinho1997@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/yuinho" class="contact-link" target="_blank"
+                        rel="noopener noreferrer">
+                        💼 LinkedIn
+                    </a>
+                    <a href="https://github.com/yuinho" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        🐙 GitHub
+                    </a>
+                    <a href="/resume.pdf" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        📄 이력서 다운로드
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 유인호. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 성능 최적화: 폰트 로딩 감지
+        document.fonts.ready.then(() => {
+            document.documentElement.classList.add('fonts-loaded');
+        });
+
+        // 지연 로딩 이미지 처리
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+
+        // 부드러운 스크롤
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 헤더 스크롤 효과
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // 스크롤 다운
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // 스크롤 업
+                header.style.transform = 'translateY(0)';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+
+        // 스크롤 진행 표시
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / scrollHeight) * 100;
+            document.getElementById('scroll-progress').style.width = scrollPercent + '%';
+        });
+
+        // 모바일 메뉴 토글
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // 스크롤 애니메이션
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // 애니메이션 대상 요소들 관찰
+        document.querySelectorAll('section, .project-card, .skill-category, .highlight-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // 접근성: 키보드 네비게이션
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('keyboard-navigation');
+        });
+
+        // 다크모드 토글 (선택사항)
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        // 다크모드 변경 감지
+        prefersDark.addEventListener('change', (e) => {
+            if (e.matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        });
+
+        // 초기 다크모드 설정
+        if (prefersDark.matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+        // 네비게이션 활성 상태 관리
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
