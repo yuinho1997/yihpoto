@@ -1111,7 +1111,7 @@
 
         // 네비게이션 활성 상태 관리
         const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-links a');
+        const navMenuLinks = document.querySelectorAll('.nav-links a');
 
         window.addEventListener('scroll', () => {
             let current = '';
@@ -1123,7 +1123,7 @@
                 }
             });
 
-            navLinks.forEach(link => {
+            navMenuLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
